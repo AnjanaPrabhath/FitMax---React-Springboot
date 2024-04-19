@@ -1,7 +1,9 @@
+import Login from './components/AJ/Login'
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <Login/>
       
     </div>
   );
