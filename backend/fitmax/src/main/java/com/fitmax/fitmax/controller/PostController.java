@@ -18,15 +18,15 @@ public class PostController {
           return "Post Saved";
     }
 
-//    @PutMapping("/updatePost")
-//    public String updatePost() {
-//
-//        return "Post Updated";
-//    }
-//    @DeleteMapping("/deletePost")
-//    public String deletePost() {
-//
-//        return "Post Deleted";
-//    }
-//
-//}
+   @PutMapping("/updatePost")
+    public String updatePost() {
+
+       return "Post Updated";
+    }
+    @DeleteMapping("/deletePost")
+    public String deletePost() {
+
+        return "Post Deleted";
+    }
+
+}
