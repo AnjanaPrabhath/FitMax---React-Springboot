@@ -10,7 +10,7 @@ const Login = () => {
         </div>
 
         {/* form */}
-        <div>
+        <div className='items-center'>
             <form>
                 <h2>LOGIN</h2> 
                 <div>
