@@ -6,6 +6,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface SocialMediaPostRepository extends MongoRepository<SocialMediaPost, ObjectId>{
+public interface SocialMediaPostRepository extends MongoRepository<SocialMediaPostRepository, ObjectId> {
 
 }
