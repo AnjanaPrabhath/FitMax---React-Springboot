@@ -1,30 +1,35 @@
 import React from 'react'
-import LogoImg from '../../assets/logo.png'
 
 const Login = () => {
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-2'>
-        {/* left image */}
+    <div className='text-black'>
+    <h1 className='text-3xl text-center font-bold'>FITMAX</h1>
+    <p className='py-3 text-center'>please enter your username and password </p>
+    <div className='w-[500px]'>
+        <div className='w-[500px]'>
+            <input type="text"
+            placeholder='username'
+            className='border border-red-500 text-[#444444]  rounded-md px-2 py-2 my-2 w-[500px]'
+            />
+        </div>
+        <div className='w-[500px]'>
+            <input type="password"
+            placeholder='password'
+            className='border border-red-500 text-[#444444]  rounded-md px-2 py-2 my-2 w-[500px]'
+            />
+        </div>
         <div>
-            <img src={LogoImg} width={600} alt="" />
-        </div>
 
-        {/* form */}
-        <div className='items-center'>
-            <form>
-                <h2>LOGIN</h2> 
-                <div>
-                    <input className='border border-gray-500 rounded-md px-2 py-1 mt-3' type="text" placeholder='username ' />                    
-                </div>               
-                <div>
-                    <input className='border border-gray-500 rounded-md px-2 py-1 my-3' type="password" placeholder='password ' />
-                </div>
-                <button className='bg-red-500 rounded-md w-[200px] text-center py-1 shadow-sm hover:cursor-pointer text-white font-semibold hover:bg-[#C6091F] duration-500'> LOGIN</button>
-                <div>
-                    <p><input type="checkbox"/> remember me</p>
-                </div>
-            </form>
+        
+    
+            <button className='bg-red-500 my-5 px-4 py-2 w-full font-bold text-white hover:bg-red-600 duration-500' >LOGIN</button>              
+     
+            <p className='text-center'>if you dont have account</p>
+        
+            <button className='border-red-500 border my-5 px-4 py-1 w-full hover:text-red-500 hover:scale-105 duration-500'>Register Now</button>              
+       
         </div>
+      </div>
     </div>
   )
 }
