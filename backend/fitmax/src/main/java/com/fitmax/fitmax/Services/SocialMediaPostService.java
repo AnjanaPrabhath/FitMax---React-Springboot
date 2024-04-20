@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.fitmax.fitmax.controller.PostCommentService;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,22 +19,32 @@ import java.util.Optional;
 public class SocialMediaPostService {
 
     @Autowired
-    private SocialMediaPostRepository socialMediaPostRepository;
+    private SocialMediaPostService socialMediaPostRepository;
 
     @Autowired
     private PostCommentService postCommentService;
 
-    public List<SocialMediaPost> allPosts() {
+    public List<SocialMediaPostService> allPosts() {
         return socialMediaPostRepository.findAll();
     }
 
-    public Optional<SocialMediaPost> getSinglePost(ObjectId id) {
+    private List<SocialMediaPostService> findAll() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'findAll'");
+    }
+
+    public Optional<SocialMediaPostService> getSinglePost(ObjectId id) {
         return socialMediaPostRepository.findById(id);
     }
 
-    public SocialMediaPost createPost(String postDescription, List<MultipartFile> postImages,
-                                      List<MultipartFile> postVideos, List<String> commentIds,
-                                      List<String> likes) {
+    private Optional<SocialMediaPostService> findById(ObjectId id) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'findById'");
+    }
+
+    public SocialMediaPostService createPost(String postDescription, List<MultipartFile> postImages,
+            List<MultipartFile> postVideos, List<String> commentIds,
+            List<String> likes) {
         SocialMediaPost post = new SocialMediaPost();
         post.setPostDescription(postDescription);
 
@@ -75,8 +87,8 @@ public class SocialMediaPostService {
     }
 
     public SocialMediaPost updatePost(ObjectId id, String postDescription, List<byte[]> postImages,
-                                      List<byte[]> postVideos, List<String> commentIds,
-                                      List<String> likes) {
+            List<byte[]> postVideos, List<String> commentIds,
+            List<String> likes) {
         Optional<SocialMediaPost> optionalPost = socialMediaPostRepository.findById(id);
         if (optionalPost.isPresent()) {
             SocialMediaPost post = optionalPost.get();
@@ -107,7 +119,6 @@ public class SocialMediaPostService {
             return null;
         }
     }
-
 
     public void deleteAllPosts() {
         socialMediaPostRepository.deleteAll();

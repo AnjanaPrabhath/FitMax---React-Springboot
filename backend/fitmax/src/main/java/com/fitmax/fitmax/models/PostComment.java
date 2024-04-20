@@ -1,4 +1,4 @@
-package com.fitmax.fitmax.models;
+package com.fitmax.fitmax.Models;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

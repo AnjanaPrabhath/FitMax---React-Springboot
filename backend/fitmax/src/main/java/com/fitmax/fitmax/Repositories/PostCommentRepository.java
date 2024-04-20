@@ -1,6 +1,5 @@
 package com.fitmax.fitmax.Repositories;
 
-import dev.paf.FitFusion.Models.PostComment;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
