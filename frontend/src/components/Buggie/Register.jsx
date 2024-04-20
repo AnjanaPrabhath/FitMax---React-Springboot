@@ -6,7 +6,7 @@ const Register = () => {
   return (
     <div className='text-black'>
     <h1 className='text-4xl text-center font-bold'>FITMAX</h1>
-    <p className='py-3 text-center'>please enter your username and password </p>
+    <p className='py-3 text-center'>please enter your details </p>
     <div className='w-[500px]'>
         <div className='w-[500px]'>
             <input type="text"
@@ -46,9 +46,9 @@ const Register = () => {
      
             <p className='text-center'>if you dont have account</p>
         
-            <Link to={RegisterPage}>
+            
             <button className='border-red-500 border my-5 px-4 py-1 w-full hover:text-red-500 hover:scale-105 duration-500'>Register Now</button>              
-            </Link>
+            
         </div>
       </div>
     </div>
