@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Login = () => {
   return (
     <div className='text-black'>
@@ -25,9 +26,10 @@ const Login = () => {
             <button className='bg-red-500 my-5 px-4 py-2 w-full font-bold text-white hover:bg-red-600 duration-500' >LOGIN</button>              
      
             <p className='text-center'>if you dont have account</p>
-        
+
+            
             <button className='border-red-500 border my-5 px-4 py-1 w-full hover:text-red-500 hover:scale-105 duration-500'>Register Now</button>              
-       
+            
         </div>
       </div>
     </div>
