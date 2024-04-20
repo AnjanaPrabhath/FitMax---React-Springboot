@@ -3,7 +3,7 @@ import React from 'react'
 const Login = () => {
   return (
     <div className='text-black'>
-    <h1 className='text-3xl text-center font-bold'>FITMAX</h1>
+    <h1 className='text-4xl text-center font-bold'>FITMAX</h1>
     <p className='py-3 text-center'>please enter your username and password </p>
     <div className='w-[500px]'>
         <div className='w-[500px]'>
