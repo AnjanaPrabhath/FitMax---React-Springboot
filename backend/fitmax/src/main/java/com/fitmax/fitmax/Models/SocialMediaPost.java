@@ -1,4 +1,4 @@
-package com.fitmax.fitmax.Models;
+package com.fitmax.fitmax.models;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -23,7 +23,7 @@ public class SocialMediaPost {
     private List<String> likes;
 
     public SocialMediaPost(String postDescription, List<byte[]> postImages, List<byte[]> postVideos,
-                           List<PostComment> comments, List<String> likes) {
+            List<PostComment> comments, List<String> likes) {
         this.postDescription = postDescription;
         this.postImages = postImages;
         this.postVideos = postVideos;
