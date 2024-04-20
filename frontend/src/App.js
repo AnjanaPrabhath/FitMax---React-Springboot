@@ -1,9 +1,10 @@
-import Login from './components/AJ/Login'
+
+import LoginPage from './components/AJ/LoginPage';
 
 function App() {
   return (
     <div>
-      <Login/>
+      <LoginPage/>
       
     </div>
   );
