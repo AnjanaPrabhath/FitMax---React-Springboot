@@ -1,4 +1,4 @@
-package dev.paf.FitFusion.Models;
+package com.fitmax.fitmax.models;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
